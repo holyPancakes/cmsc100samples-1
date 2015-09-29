@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+      <head>
+            <title></title>
+            <meta charset="utf-8"/>
+      </head>
+      <body>
+            <p>Input Grade</p>
+            <input type="text" id="demo1"/>
+            <input type="button" onclick="getStatus()" value="Get Status"/>
+            <div id="message"></div>
+            
+            <script>
+                  function getStatus(){
+                        var grade = document.getElementById("demo1").value;
+                        var status = (Number(grade)>=55)?"Pass":"Fail";
+                        document.getElementById("message").innerHTML = status;
+                  }
+            
+            </script>
+      
+      </body>
+
+</html>
