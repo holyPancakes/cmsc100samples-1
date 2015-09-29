@@ -52,11 +52,8 @@ describe('Degree Program', function () {
 		});
 	});
 
-	/* 
-		INSERT should return the newly created row in JSON format.
-		OK lang kahit mali :D
-	*/
-	/*describe('insert()', function () {
+	// Test the INSERT web service
+	describe('insert()', function () {
 		it('should create a new degree program record', function (done) {
 			var degreeProgram = {
 				'code': 'BSDC',
@@ -75,9 +72,9 @@ describe('Degree Program', function () {
 					done();
 				});
 		});
-	});*/
+	});
 	
-	// Test update web service
+	// Test the UPDATE web service
 	describe('update()', function () {
 		it('should update a specific degree program record: total_units field only', function () {
 			var update = {
@@ -100,6 +97,7 @@ describe('Degree Program', function () {
 		});
 	});
 
+	// Test the REMOVE web service
 	describe('remove()', function () {
 		it('should remove a specific degree program record', function (done) {
 			var deleteId = {

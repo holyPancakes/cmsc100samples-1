@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
       <head>
             <title>Create Degree</title>
             <meta charset="utf-8"/>
@@ -78,3 +79,30 @@
       Attribute minimization is forbidden 
 -->
 
+=======
+	<head>
+		<title>Create Degree Program</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<header>
+			<h1>Create a Degree Program</h1>
+		</header>
+
+		<!-- We will use this later for links. -->
+		<nav>
+			<a href="http://localhost:5000/students">Retrieve Students</a>
+			<a href="http://localhost:5000/degree-programs">Retrieve Degrees</a>
+		</nav>
+
+		<form method="post" action="http://localhost:5000/degree-programs">
+			<input type="text" name="code" placeholder="Degree Code"/><br/>
+			<input type="text" name="name" placeholder="Description"/><br/>
+			<input type="submit"/>
+		</form>
+
+		<footer>&copy; 2015</footer>
+
+	</body>
+</html>
+>>>>>>> b1a73649a608d0d024f7c014600d1a5420f5e65b
